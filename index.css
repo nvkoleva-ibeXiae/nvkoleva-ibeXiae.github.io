@@ -1,0 +1,100 @@
+/* nvkoleva-ibeXiae Portfolio CSS */
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(42deg, #f1a04b, #eb465d, #c42239, #efcb8b, #f7f1e6, #e66339);
+	background-size: 600% 100%;
+	animation: gradient 16s linear infinite;
+	animation-direction: alternate;
+}
+
+@keyframes gradient {
+	0% { background-position: 0% }
+	100% { background-position: 100% }
+}
+
+body {
+	font-family: 'Computer Modern Serif', serif;
+	line-height: 1.3;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+a:link {
+	font-weight: bold;
+	-webkit-transition: color 1s, font-size 1s;
+	-moz-transition: color 1s, font-size 1s;
+	transition: color 1s, font-size 1s;
+	padding-right: 5px;
+	color: white;
+}
+
+a:visited {
+	color: #8B0000;
+}
+
+a:hover {
+	filter: brightness(60%);
+}
+
+h1 {
+	font-size: 48px;
+}
+
+#links {
+	color: white;
+	top: 30px;
+}
+
+#text {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 190px;
+	width: 60%;
+	text-align: center;
+	display: block;
+	background: transparent;
+	color: white;
+}
+
+#title {
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+#description {
+	font-size: 14px;
+	font-weight: 80;
+	margin-bottom: 10px;
+}
+
+#particles-js {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	top: 100px;
+}
+
+@media screen and (max-width: 1020px) {
+	#content, #links, #text, #particles-js {
+		margin-left: 10px;
+		margin-right: 10px;
+		float: none;
+		width: auto;
+	}
+
+	#description {
+		font-size: 20px;
+		font-weight: 100;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
